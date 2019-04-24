@@ -1,0 +1,21 @@
+Sun Apr 14 16:57:14 MSK 2019 : Сетевой сервер Apache Derby Network Server - 10.10.2.0 - (1582446) запущен и готов принимать соединения на порту 1527 на {3} 
+----------------------------------------------------------------
+Sun Apr 14 16:57:14 MSK 2019:
+ Производится загрузка Derby версии The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): экземпляр a816c00e-016a-1c23-43e2-ffffdc283631
+в каталоге базы данных D:\Avalon\4Term\DistrAppJava\Labs\Lab4\javaDB\task4db sun.misc.Launcher$AppClassLoader@1d44bcfa 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_181-b13
+user.dir=C:\Program Files\glassfish-4.1.1\javadb
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=D:\Avalon\4Term\DistrAppJava\Labs\Lab4\javaDB
+Запущен загрузчик классов базы данных - derby.database.classpath=''
+----------------------------------------------------------------
+Sun Apr 14 16:58:29 MSK 2019:
+Завершается работа экземпляра a816c00e-016a-1c23-43e2-ffffdc283631
+Sun Apr 14 16:58:29 MSK 2019 Thread[DRDAConnThread_3,5,main] (DATABASE = task4db), (DRDAID = {3}), База данных 'task4db' завершила работу.
+----------------------------------------------------------------
+Sun Apr 14 16:59:08 MSK 2019: Shutting down Derby engine
+----------------------------------------------------------------
