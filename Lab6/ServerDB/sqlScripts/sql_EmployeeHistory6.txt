@@ -1,0 +1,50 @@
+create table employeehistory6(
+id integer,
+position varchar(24) not null,
+manager integer,
+hire date not null,
+dismiss date,
+code integer,
+constraint emphist6_id_pk primary key(id),
+constraint emphist6_code_fk foreign key(code) references employees6(code),
+constraint emphist6_manager_check check(manager > 0),
+constraint emphist6_dismiss_check check(dismiss >= hire)
+);
+
+drop table employeehistory6
+
+create sequence emphist6_id_seq
+start with 101 minvalue 101 nocache
+
+select * from employeehistory6
+
+insert into employeehistory6(id, position, manager, hire, dismiss, code)
+values (emphist6_id_seq.nextval, 'manager', 33, to_date('15.05.2012','dd.mm.yyyy'), to_date('25.10.2015','dd.mm.yyyy'), 2);
+
+insert into employeehistory6(id, position, manager, hire, dismiss, code)
+values (emphist6_id_seq.nextval, 'clerk', 7, to_date('17.11.2015','dd.mm.yyyy'), to_date('25.01.2018','dd.mm.yyyy'), 2);
+
+insert into employeehistory6(id, position, manager, hire, dismiss, code)
+values (emphist6_id_seq.nextval, 'engineer', 24, to_date('11.02.2012','dd.mm.yyyy'), to_date('08.06.2016','dd.mm.yyyy'), 1);
+
+insert into employeehistory6(id, position, manager, hire, dismiss, code)
+values (emphist6_id_seq.nextval, 'accountant', 15, to_date('01.08.2010','dd.mm.yyyy'), to_date('23.12.2013','dd.mm.yyyy'), 3);
+
+insert into employeehistory6(id, position, manager, hire, dismiss, code)
+values (emphist6_id_seq.nextval, 'manager', 32, to_date('11.05.2014','dd.mm.yyyy'), to_date('13.10.2017','dd.mm.yyyy'), 3);
+
+insert into employeehistory6(id, position, manager, hire, dismiss, code)
+values (emphist6_id_seq.nextval, 'clerk', 15, to_date('05.06.2009','dd.mm.yyyy'), to_date('20.10.2016','dd.mm.yyyy'), 4);
+
+insert into employeehistory6(id, position, manager, hire, dismiss, code)
+values (emphist6_id_seq.nextval, 'engineer', 24, to_date('01.02.2013','dd.mm.yyyy'), to_date('13.11.2018','dd.mm.yyyy'), 5);
+
+select * from employees6
+
+select * from employeehistory6
+
+update employeehistory6
+set position = 'clerk'
+where position = 'salor'
+
+commit

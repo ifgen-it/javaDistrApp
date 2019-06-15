@@ -1,0 +1,36 @@
+create table employees6(
+code integer,
+name varchar(24) not null,
+last_name varchar(32) not null,
+login varchar(16) not null,
+psw varchar(16),
+constraint emp6_code_pk primary key(code)
+)
+
+drop table employees6
+
+desc employees6;
+
+drop sequence emp6_code_seq
+
+create sequence emp6_code_seq
+start with 1 minvalue 1 nocache
+
+select * from user_sequences
+
+truncate table employees6
+
+desc employees6
+
+select * from user_constraints
+where table_name = 'EMPLOYEES6'
+
+select * from employees6 order by code;
+
+insert into employees6(code, name, last_name, login, psw) values (emp6_code_seq.nextval, 'evgen', 'smirnov', 'evgsmi', '1111');
+insert into employees6(code, name, last_name, login, psw) values (emp6_code_seq.nextval, 'kate', 'neratova', 'katner', '1404');
+insert into employees6(code, name, last_name, login, psw) values (emp6_code_seq.nextval, 'nina', 'starynina', 'ninok', '9999');
+insert into employees6(code, name, last_name, login, psw) values (emp6_code_seq.nextval, 'maxim', 'rovchakov', 'maxet', 'bilchert');
+insert into employees6(code, name, last_name, login, psw) values (emp6_code_seq.nextval, 'evgeny', 'juravlev', 'evgenjur', 'psp2012');
+
+commit

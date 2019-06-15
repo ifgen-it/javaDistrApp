@@ -1,0 +1,24 @@
+TABLE EMPLOYEES6
+
+      CODE NAME                     LAST_NAME                        LOGIN            PSW             
+---------- ------------------------ -------------------------------- ---------------- ----------------
+         1 evgen                    smirnov                          evgsmi           1111            
+         2 kate                     neratova                         katner           1404            
+         3 nina                     starynina                        ninok            9999            
+         4 maxim                    rovchakov                        maxet            bilchert        
+         5 evgeny                   juravlev                         evgenjur         psp2012         
+
+
+TABLE EMPLOYEEHISTORY6
+
+        ID POSITION                    MANAGER HIRE     DISMISS        CODE
+---------- ------------------------ ---------- -------- -------- ----------
+       101 manager                          33 15.05.12 25.10.15          2
+       102 clerk                             7 17.11.15 25.01.18          2
+       103 engineer                         24 11.02.12 08.06.16          1
+       104 accountant                       15 01.08.10 23.12.13          3
+       105 manager                          32 11.05.14 13.10.17          3
+       106 clerk                            15 05.06.09 20.10.16          4
+       107 engineer                         24 01.02.13 13.11.18          5
+
+
